@@ -39,8 +39,10 @@ export class AuthService {
 		delete userObj.password;
 
 		return {
-			accessToken,
-			user: userObj,
+			"user": {
+				...userObj,
+				"accessToken": accessToken,
+			},
 		};
 	}
 }
