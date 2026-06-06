@@ -4,7 +4,7 @@ import { IsEmail, IsEnum, IsOptional, IsString, MinLength } from 'class-validato
 export class UpdateUserDto {
 	@ApiPropertyOptional({
 		description: 'The email address of the user',
-		example: 'user@example.com',
+		example: 'mahmoud.osama@digilians.com',
 	})
 	@IsEmail()
 	@IsOptional()
@@ -29,7 +29,7 @@ export class UpdateUserDto {
 
 	@ApiPropertyOptional({
 		description: 'The first name of the user',
-		example: 'John',
+		example: 'Mahmoud',
 	})
 	@IsString()
 	@IsOptional()
@@ -37,7 +37,7 @@ export class UpdateUserDto {
 
 	@ApiPropertyOptional({
 		description: 'The last name of the user',
-		example: 'Doe',
+		example: 'Osama',
 	})
 	@IsString()
 	@IsOptional()

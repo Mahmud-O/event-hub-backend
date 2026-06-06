@@ -8,7 +8,7 @@ export type UserDocument = User & Document;
 export class User {
 	@ApiProperty({
 		description: 'The unique email address of the user',
-		example: 'user@example.com',
+		example: 'mahmoud.osama@digilians.com',
 		required: true,
 	})
 	@Prop({ required: true, unique: true, lowercase: true, trim: true })
@@ -33,7 +33,7 @@ export class User {
 
 	@ApiProperty({
 		description: 'The first name of the user',
-		example: 'John',
+		example: 'Mahmoud',
 		required: true,
 	})
 	@Prop({ required: true })
@@ -41,7 +41,7 @@ export class User {
 
 	@ApiProperty({
 		description: 'The last name of the user',
-		example: 'Doe',
+		example: 'Osama',
 		required: true,
 	})
 	@Prop({ required: true })

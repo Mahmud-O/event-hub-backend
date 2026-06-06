@@ -4,7 +4,7 @@ import { IsEmail, IsEnum, IsNotEmpty, IsOptional, IsString, MinLength } from 'cl
 export class CreateUserDto {
 	@ApiProperty({
 		description: 'The email address of the user',
-		example: 'user@example.com',
+		example: 'mahmoud.osama@digilians.com',
 		required: true,
 	})
 	@IsEmail()
@@ -33,7 +33,7 @@ export class CreateUserDto {
 
 	@ApiProperty({
 		description: 'The first name of the user',
-		example: 'John',
+		example: 'Mahmoud',
 		required: true,
 	})
 	@IsString()
@@ -42,7 +42,7 @@ export class CreateUserDto {
 
 	@ApiProperty({
 		description: 'The last name of the user',
-		example: 'Doe',
+		example: 'Osama',
 		required: true,
 	})
 	@IsString()
